@@ -7,11 +7,11 @@ $(document).ready(() => {
 });
 
 function getMovies(searchText) {
-  preventDefault();
+  //   preventDefault();
   axios
     .get("http://www.omdbapi.com?s=" + searchText + "&apikey=8088643a")
     .then((response) => {
-      //   console.log(response);
+      console.log(response);
       let movies = response.data.Search;
       let output = "";
       $.each(movies, (index, movie) => {
