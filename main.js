@@ -7,6 +7,7 @@ $(document).ready(() => {
 });
 
 function getMovies(searchText) {
+  preventDefault();
   axios
     .get("http://www.omdbapi.com?s=" + searchText + "&apikey=8088643a")
     .then((response) => {
