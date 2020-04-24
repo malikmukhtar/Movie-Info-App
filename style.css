@@ -1,0 +1,34 @@
+* {
+    color: white;
+
+}
+nav a {
+    color: white;
+}
+
+body {
+    background-color: #002b36;
+}
+
+.container p {
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    
+}
+#movies img, #movie img {
+    width: 100%;
+}
+
+@media(min-width: 960px){
+#movies .col-md-3 .well {
+    height: 390px;
+    margin-bottom: 50px;
+}
+
+#movies .col-md-3 img {
+    height: 240px;
+}
+}
